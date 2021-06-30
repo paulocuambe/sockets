@@ -11,7 +11,7 @@ public class Client {
     public static void main(String[] args) throws IOException {
         Socket socket = new Socket(Constant.IP, Constant.PORT);
 
-        String product = "2";
+        String product = "b";
 
         InputStream inputStream = socket.getInputStream();
         OutputStream outputStream = socket.getOutputStream();
