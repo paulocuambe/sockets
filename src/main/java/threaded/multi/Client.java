@@ -27,10 +27,11 @@ public class Client {
                 inputStream.read(response);
                 break;
             } catch (SocketTimeoutException exception) {
-                System.out.println(String.format("Erro - %d", i));
+                exception.printStackTrace();
+                System.out.printf("Erro - %d%n", i);
                 i++;
             }
-        } while (i <= 2);
+        } while (i <= 3);
 
 
         String strResponse = new String(response).trim();
