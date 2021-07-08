@@ -14,7 +14,7 @@ public class Server {
         while (true) {
             System.out.println("\nWaiting for the client...");
             Socket socket = serverSocket.accept();
-            Thread.sleep(5000);
+            Thread.sleep(5200);
 
             System.out.println("Starting a thread wich will service the client");
             new ServiceThread(socket).start();
